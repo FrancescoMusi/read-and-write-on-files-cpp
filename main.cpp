@@ -4,10 +4,12 @@
 int main() {
 	
 	int n, s;
-
+	
+	//se in un altra cartella -> "/inputs/input.txt"
 	freopen("input.txt", "r", stdin);
 	freopen("output.txt", "w", stdout);
 	
+	//assert serve per il debug, si potrebbe fare senza	
 	assert(1 == scanf("%d", &n));
 	
 	int a[n];
@@ -17,8 +19,8 @@ int main() {
 		s += a[i];
 	}
 	
-	printf("%d", s);
-	
+	//scrive su file un decimale (d)
+	printf("%d", s);	
 	
 	return 0;
 }
