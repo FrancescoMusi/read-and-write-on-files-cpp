@@ -1,30 +1,26 @@
-#include <assert.h>
 #include <stdio.h>
+#include <assert.h>
 
 int main() {
+	int N, sum, i;
 	
-	int n, s;
+	freopen("input/1", "r", stdin);
+	freopen("output/1", "w", stdout);
 	
-	//se in un altra cartella -> "/inputs/input.txt"
-	freopen("input.txt", "r", stdin);
-	freopen("output.txt", "w", stdout);
+	assert( 1 == scanf("%d", &N) );
+
+	int lista[N];
 	
-	//assert serve per il debug, si potrebbe fare senza	
-	assert(1 == scanf("%d", &n));
-	
-	int a[n];
-	
-	for (int i = 0; i < n; i++) {
-		assert(1 == scanf("%d", &a[i]));
-		s += a[i];
+	for( i = 0; i < N; i++) {
+		assert( 1 == scanf("%d", &lista[i]) );
 	}
 	
-	//scrive su file un decimale (d)
-	printf("%d", s);	
+	for( i = 0; i < N; i++) {
+		sum += lista[i];
+	}	
 	
-	return 0;
+	printf("%d", sum);
 }
-
 
 /*
 agent Francesco Musi
