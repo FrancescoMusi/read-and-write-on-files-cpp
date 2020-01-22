@@ -2,21 +2,21 @@
 #include <assert.h>
 
 int main() {
-	int N, sum, i;
+	int n, sum, i;
 	
 	freopen("input/1", "r", stdin);
 	freopen("output/1", "w", stdout);
 	
-	assert( 1 == scanf("%d", &N) );
+	assert( 1 == scanf("%d", &n) );
 
-	int lista[N];
+	int l[n];
 	
 	for( i = 0; i < N; i++) {
-		assert( 1 == scanf("%d", &lista[i]) );
+		assert( 1 == scanf("%d", &l[i]) );
 	}
 	
-	for( i = 0; i < N; i++) {
-		sum += lista[i];
+	for( i = 0; i < n; i++) {
+		sum += l[i];
 	}	
 	
 	printf("%d", sum);
