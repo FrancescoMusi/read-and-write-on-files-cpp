@@ -15,8 +15,9 @@ int main() {
 	freopen("input.txt", "r", stdin);
 	freopen("output.txt", "w", stdout);
 	
-	scanf("%d", &a[n++]);
-	while(1 == scanf("%d", &a[n++])) {}
+	scanf("%d", &l[0]);
+	//si pa ++n così aumenta il valore e restituisce il valore aumentato
+	while(1 == scanf("%d", &l[++n])) {}
 	
 	max = a[0];
 	min = a[0];
